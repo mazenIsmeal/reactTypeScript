@@ -6,6 +6,8 @@ import Header from './components/Header';
 import Input from './components/Input';
 import Oscar from './components/Oscar';
 import PersonList from './components/PersonList';
+import IsLoggedIn from './components/state/IsLoggedIn';
+import User from './components/state/User';
 import Status from './components/Status';
 
 function App() {
@@ -39,6 +41,8 @@ function App() {
       }} />
       <Input value='' changeHandler={(event) => console.log(event)} />
       <Container styles={{padding: '1rem 4%'}} />
+      <IsLoggedIn />
+      <User />
     </div>
   );
 }
